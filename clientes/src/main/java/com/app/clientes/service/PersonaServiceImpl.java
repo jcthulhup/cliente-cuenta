@@ -71,4 +71,9 @@ public class PersonaServiceImpl implements PersonaService {
         persona.setPerFeActualiza(new Date());
         return personaRepository.save(persona);
     }
+
+    @Override
+    public void delete(Integer id) {
+        personaRepository.deleteById(id);
+    }
 }
