@@ -73,6 +73,8 @@ public class ClientesController {
     public void delete(@PathVariable Integer id){
         log.info("delete -> clientes");
         log.info("Eliminar cliente con id {}", id);
+        Cliente cliente = clienteService.getById(id);
         clienteService.delete(id);
+        personaService.delete(cliente.getPersona().getPerId());
     }
 }

@@ -13,4 +13,6 @@ public interface PersonaService {
     Persona getById(Integer perId);
 
     Persona update(Integer id, Persona req);
+
+    void delete(Integer id);
 }
