@@ -11,7 +11,7 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="DEVSU_TIPO_CUENTAS")
+@Table(name="TIPO_CUENTAS")
 public class TipoCuenta {
     private static final long serialVersionUID = 1L;
     @Id

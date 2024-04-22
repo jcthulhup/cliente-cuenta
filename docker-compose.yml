@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  oracle-db:
+    image: oracle-local
+#    environment:
+#      - ORACLE_PASSWORD=secreto
+#      - APP_USER=clientes
+#      - APP_PASSWORD=clientes
+#      - APP_USER_PASSWORD=clientes
+    ports:
+      - "1521:1521"
+  clientes:
+    image: jcthulhup/clientes:0.0.1-SNAPSHOT
+    ports:
+      - "8081:8081"
+    environments:
+      - DATABASE_URL=jdbc:oracle:thin:@oracle-db:1521:free
+      - DATABASE_USERNAME=clientes
+      - DATABASE_PASSWORD=clientes
+    depends_on:
+      - oracle-db
+  cuentas:
+    image: jcthulhup/cuentas:0.0.1-SNAPSHOT
+    ports:
+      - "8082:8082"
+    depends_on:
+      - oracle-db

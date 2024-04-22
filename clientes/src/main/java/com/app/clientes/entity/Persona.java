@@ -13,7 +13,7 @@ import java.util.Date;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="DEVSU_PERSONAS")
+@Table(name="PERSONAS")
 @SequenceGenerator(name="PER_SEQUENCE_GENERATOR", sequenceName="PER_SEQ", initialValue=1, allocationSize=1)
 public class Persona {
     private static final long serialVersionUID = 1L;
