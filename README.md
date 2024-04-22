@@ -17,12 +17,12 @@ Ingresar datos: system, secreto, localhost, free, probar y conectar...
 * Crear usuario y otorgarle permisos
 ```
 alter session set "_ORACLE_SCRIPT"=true;
-create user DEVSUAPP identified by DEVSUAPP
+create user clientes identified by clientes
 default tablespace system
 quota UNLIMITED on system;
-GRANT CREATE SESSION TO DEVSUAPP;
-grant create table to DEVSUAPP;
-grant create any sequence to DEVSUAPP;	
+GRANT CREATE SESSION TO clientes;
+grant create table to clientes;
+grant create any sequence to clientes;	
 ```
 
 * Ejecutar script BaseDatos.sql para generar las tablas, secuencias y data inicial
