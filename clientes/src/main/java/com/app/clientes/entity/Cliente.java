@@ -14,7 +14,7 @@ import java.util.Date;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="DEVSU_CLIENTES")
+@Table(name="CLIENTES")
 @SequenceGenerator(name="CLI_SEQUENCE_GENERATOR", sequenceName="CLI_SEQ", initialValue=1, allocationSize=1)
 public class Cliente implements Serializable{
     private static final long serialVersionUID = 1L;

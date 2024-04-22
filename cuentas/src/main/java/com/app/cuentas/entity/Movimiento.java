@@ -15,7 +15,7 @@ import java.util.Date;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="DEVSU_MOVIMIENTOS")
+@Table(name="MOVIMIENTOS")
 @SequenceGenerator(name="MOV_SEQUENCE_GENERATOR", sequenceName="MOV_SEQ", initialValue=1, allocationSize=1)
 public class Movimiento {
     @Id

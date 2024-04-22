@@ -19,7 +19,7 @@ import java.util.List;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="DEVSU_CUENTAS")
+@Table(name="CUENTAS")
 @SequenceGenerator(name="CTA_SEQUENCE_GENERATOR", sequenceName="CTA_SEQ", initialValue=1, allocationSize=1)
 public class Cuenta implements Serializable {
     private static final long serialVersionUID = 1L;
